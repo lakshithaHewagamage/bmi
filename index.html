@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body{
+            font-size: 1.5em;
+            background-color: rgb(5, 5, 5);
+        }
+        h1{
+            font-size: 1.5em;
+        }
+        #bmi{
+            margin-right: 10%;
+            color: red;
+        }
+        label{
+            color: rgb(253, 250, 250);
+           
+        }
+    </style>
+</head>
+<body >
+    
+    <div class="jumbotron text-center">
+        <h1 class="font-weight-bold"><span id="bmi">BMI</span> <br>Calculator</h1>    
+    </div>
+    
+    <div class="container">
+        <form action="/" method="post">
+          <div class="form-group">
+            <label for="weight" class=" font-weight-bold">Weight:</label>
+            <input class="form-control" type="text" name="num1" placeholder="Enter the WEIGHT in Kg">
+          </div>
+          <div class="form-group">
+            <label for="height" class=" font-weight-bold">Height:</label>
+            <input class="form-control" type="text" name="num2" placeholder="Enter the HEIGHT in m">
+          </div>
+          <button type="submit" class="btn btn-danger offset-md-2" name="submit">Calculate</button>
+        </form>
+    </div>
+
+</body>
+</html>
